@@ -3,13 +3,13 @@ Once you have obtained an access token, you can ask the login server for some de
 
 This step is entirely optional, as all you need to authenticate to ESI is the access token.
 
-To get the character ID from the SSO server make an HTTP GET request to https://login.eveonline.com/oauth/verify that looks like this:
+To get the character ID from the SSO server make an HTTP GET request to https://esi.tech.ccp.is/verify/ that looks like this:
 ```http
-GET https://login.eveonline.com/oauth/verify HTTP/1.1
+GET https://esi.tech.ccp.is/verify/
 
 User-Agent: ...
 Authorization: Bearer uNEEh...a_WpiaA2
-Host: login.eveonline.com
+Host: esi.tech.ccp.is
 ```
 Important parameters are:
 
